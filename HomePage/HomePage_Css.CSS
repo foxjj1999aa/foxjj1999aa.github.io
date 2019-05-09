@@ -1,8 +1,8 @@
 body {
     background-image: url('Img/HomePage_Bordere.jpg');
-    background-position: bottom;
+    background-position: bottom left;
     background-repeat: repeat-x;
-    background-size: 40%;
+    background-size: auto 15%;
     background-color: #F5F5F5;
 }
 
