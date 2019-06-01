@@ -3,50 +3,60 @@
 <html>
 <style>
 	#getGift {
-		width: 850px;
-		height: 600px;
-		margin-left:-200px;
+		width: 890px;
+		height: 627px;
 		background: url(https://foxjj1999aa.github.io/%E4%B8%AD%E7%8D%8E%E5%95%A6.png);
-		display: none;
-	}	
+		display:none;
+		z-index:2;
+		position: absolute;
+		top: 47%; 
+        left: 54%;
+		transform: translate(-50%, -50%);
+	}
 
 	#again {
-		width: 850px;
-		height: 600px;
-		margin-left:-200px;
+		width: 890px;
+		height: 627px;
 		background: url(https://foxjj1999aa.github.io/%E7%B5%A6%E4%BD%A0%E6%A9%9F%E6%9C%83.png);
-		display: none;
+		display:none;
+		z-index:2;
+		position: absolute;
+		top: 45%; 
+        left: 54%;
+		transform: translate(-50%, -50%);
+		
 	}
 
 	#GG {
-		width: 850px;
-		height: 600px;
-		margin-left:-200px;
+		width: 890px;
+		height: 627px;
 		background: url(https://foxjj1999aa.github.io/%E6%B2%92%E4%B8%AD%E7%8D%8E.png);
-		display: none;
+		display:none;
+		z-index:2;
+		position: absolute;
+		top: 45%; 
+        left: 54%;
+		transform: translate(-50%, -50%);
 	}
 </style>
 
-
 <head>
 	
-
-	<link rel="stylesheet" type="text/css" href="https://foxjj1999aa.github.io/styleCJ.css"/>
-
 </head>
-<table  border="1" width="30%" Height="9%">
-		<tr>
-			<th width="10%"> <a href="https://foxjj1999aa.github.io/抽獎公佈欄.HTML">抽獎公佈欄</a></th>
 
-			<th width="10%"> <a href="https://foxjj1999aa.github.io/SearchPoint.HTML">點數查詢</a></th>
-
-			<th width="10%"> <a href="https://foxjj1999aa.github.io/抽獎前置.HTML">輸入點數</a></th>
-
-		</tr>
-	</table>
 <body>
+		<table border="1" width="30%" Height="8%">
+				<tr>
+					<th width="10%"> <a href="https://foxjj1999aa.github.io/抽獎公佈欄.HTML">抽獎公佈欄</a></th>
+					<th width="10%"> <a href="https://foxjj1999aa.github.io/抽獎前置.HTML">輸入序號</a></th>
+		
+				</tr>
+			</table>
+		
+			<link rel="stylesheet" type="text/css" href="styleCJ.css" />
+		
 	<div class="shanDeng" id="deng">
-		<div id="luck">
+		<div id="luck"align="center">
 			<div id="getGift" onclick="hiddenImagegift()"></div>
 			<a href="#" onclick="displayImagegift()"></a>
 			<div id="again" onclick="hiddenImagetry()"></div>
@@ -54,35 +64,39 @@
 			<div id="GG" onclick="hiddenImageGG()"></div>
 			<a href="#" onclick="displayImageGG()"></a>
 			<!-- luck -->
-			<table id=bingo>
-				<tr>
-					<td class="luck-unit luck-unit-0"><img src="中獎.png">
-					</td>
-					<td class="luck-unit luck-unit-1"><img src="槓龜.png">
-					</td>
-					<td class="luck-unit luck-unit-2"><img src="中獎.png">
-					</td>
-				</tr>
-				<tr>
-					<td class="luck-unit luck-unit-7"><img
-							src="再抽一次.png"></td>
-					<td rowspan="1" colspan="1" class="cjBtn" id="btn"></td>
-					<td class="luck-unit luck-unit-3"><img
-							src="再抽一次.png"></td>
-				</tr>
-				<tr>
-					<td class="luck-unit luck-unit-6"><img src="中獎.png">
-					</td>
-					<td class="luck-unit luck-unit-5"><img src="槓龜.png">
-					</td>
-					<td class="luck-unit luck-unit-4"><img src="中獎.png">
-					</td>
-				</tr>
-			</table>
+			<br><br><br><br><br><br>
+			<div id=bingoo class="center"><table id=bingo >
+				
+					<tr>
+						<td class="luck-unit luck-unit-0"><img src="https://foxjj1999aa.github.io/%E4%B8%AD%E7%8D%8E.png">
+						</td>
+						<td class="luck-unit luck-unit-1"><img src="https://foxjj1999aa.github.io/%E6%A7%93%E9%BE%9C.png">
+						</td>
+						<td class="luck-unit luck-unit-2"><img src="https://foxjj1999aa.github.io/%E4%B8%AD%E7%8D%8E.png">
+						</td>
+					</tr>
+					<tr>
+						<td class="luck-unit luck-unit-7"><img src="https://foxjj1999aa.github.io/%E5%86%8D%E6%8A%BD%E4%B8%80%E6%AC%A1.png"></td>
+						
+						<td rowspan="1" colspan="1" class="cjBtn" id="btn"></td>
+						
+						<td class="luck-unit luck-unit-3">
+							<img src="https://foxjj1999aa.github.io/%E5%86%8D%E6%8A%BD%E4%B8%80%E6%AC%A1.png"></td>
+					</tr>
+					<tr>
+						<td class="luck-unit luck-unit-6"><img src="https://foxjj1999aa.github.io/%E4%B8%AD%E7%8D%8E.png">
+						</td>
+						<td class="luck-unit luck-unit-5"><img src="https://foxjj1999aa.github.io/%E6%A7%93%E9%BE%9C.png">
+						</td>
+						<td class="luck-unit luck-unit-4"><img src="https://foxjj1999aa.github.io/%E4%B8%AD%E7%8D%8E.png">
+						</td>
+					</tr>
+					
+				</table></div>
+			
+			
 		</div><!-- luckEnd -->
 	</div>
-
-</body>
 	<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
 	<script>
 		var Username = location.search.substr(1);
@@ -357,5 +371,8 @@
 
 			};
 	</script>
+
+
+</body>
 
 </html>

@@ -1,28 +1,32 @@
-body{	
-		background-image: url("抽獎背景.jpg");
-		background-repeat: no-repeat;
-		background-size:auto;
-		background-position:center center;
-		padding-top:250px;
-	}
-	#luck{
-		
-	}
-	*{
-		margin-left: 0;padding-left: 0;
-	}
+
+	body {
+	background: url('抽獎背景.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+  }
+
 
 
 	.shanDeng,.shanDeng2{
-		position:relative;
 		width:495px;
 		height:495px;
 		background-size: cover;
 		background-repeat: no-repeat;
-		margin:auto auto 280px auto;
-
-		
+		position: absolute;
+        top: 45%; 
+        left: 50%;
+		transform: translate(-50%, -50%);
+		z-index:1;	
 	}
+	
+	.center{
+        position: absolute;
+        top: 45%; 
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 
 	.shanDeng{
 		background-image: url(shandeng1.png);
@@ -35,7 +39,7 @@ body{
 		width: 140px;
 		height: 140px;
 		background-repeat: no-repeat;
-		background-size: 100%;
+		background-size: cover;
 	}
 
 	#btn.cjBtn{
