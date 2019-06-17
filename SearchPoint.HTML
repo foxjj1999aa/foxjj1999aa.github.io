@@ -55,11 +55,13 @@
         function getUserInfo() {
             db.ref("User").once("value").then(function (snapshot) {
                 UserCount = snapshot.numChildren();
-            });
+                
+            });            
             var xx=location.search.substr(1);            
-            setTimeout(getUserInfo2, 1200);
+            setTimeout(getUserInfo2, 3000);
         }
         function getUserInfo2() {
+            alert(UserCount);
             UserID.length = UserPoint.length = UserCount+1;
             for (let i = 0; i < UserCount; i++) {
                 db.ref("User/" + i + "/ID").once('value').then(function (snapshot) {
