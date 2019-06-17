@@ -43,7 +43,7 @@
 </div>
 <button onclick="javascript:location.href='https://foxjj1999aa.github.io/抽獎前置.HTML?'+Username">返回輸入點數</button>
 <button id=change align=right>填寫寄貨資訊</button>
-<button onclick="send1()">寄送兌獎資料</button>
+<button onclick="send1()">++</button>
 
 
 
@@ -135,6 +135,7 @@
             snapshot.forEach(function (item) {
                 Key = item.key;
             })
+            
         });
         db.ref("Gift").orderByChild("ID").equalTo(Username).once('value', function (snapshot) {
             snapshot.forEach(function (item) {
@@ -152,7 +153,7 @@
 
         });
 
-        setTimeout(getInfo, 1200);
+        setTimeout(getInfo, 2000);
     }
     function getInfo() {
         db.ref("User/" + Key + "/Point").once("value").then(function (snapshot) {
